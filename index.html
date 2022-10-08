@@ -11,29 +11,30 @@
 
 <body>
     <div class="container">
-    <h1>Calorie Calcultor</h1>
+    <h1>Calorie Calculator</h1>
     <form id="myform">
         <div>
             Female<input type="radio" id="female" name="gender" value="female">
             Male<input type="radio" id="male" name="gender" value="male">
         </div>
         <div>
-            Weight<input type="number" id="weight" value="40"> Kg
+            Weight <input type="number" id="weight" value="40"> Kg
         </div>
         <div>
-            Height<input type="number" id="height-In-Feet" value="5"> Feet
+            Height <input type="number" id="height-In-Feet" value="5"> Feet
             <input type="number" id="height-In-Inches" value="0" min="0" max="9"> Inches
         </div>
         <div>
-            Age<input type="number" id="age" value="20"> Years
+            Age <input type="number" id="age" value="20"> Years
         </div>
-        <div>
-            LifeStyle<input type="number" id="lifeStyle" value="3" min="1" max="5"> 1 = Low Activity 5 = High Activity
+        <div class="tooltip">
+            LifeStyle <input type="number" id="lifeStyle"  value="3" min="1" max="5"> 
+            <span class="tooltiptext">1 = Low Activity 5 = High Activity </span>
         </div>
     </form>
     <button id="cal-btn">Calculate</button>
-    </div>
-    <div id="output"></div>
+    
+    <div id="output"></div></div>
     <script src="script.js"></script>
 </body>
 

@@ -8,19 +8,19 @@ var lifeStyle=document.querySelector("#lifeStyle")
 var calculateBtn=document.querySelector("#cal-btn")
 var output=document.querySelector("#output")
 
-alert("We wil never stored your data")
+alert("🔔 We wil never stored your data 🔔")
 
 
 calculateBtn.addEventListener("click", calorieCal)
 
 function calorieCal(){
     if(female.checked){
-        output.innerText=  `You need ${Math.round(Number(lifeStyle.value)*655 + ( 9.563*Number(weight.value)) + ( 1.850 * ((Number(heightInFeet.value)*12)+Number(heightInInches.value)))-(4.676*Number(age.value)))} calorie per day`
+        output.innerText=  `You need ${Math.round(Number(lifeStyle.value)*0.2*655+(9.563*Number(weight.value))+(1.850*((Number(heightInFeet.value)*12)+Number(heightInInches.value)))-(4.676*Number(age.value)))} calorie per day`
         
     } else if (male.checked){
-        output.innerText=`You need ${Math.round(Number(lifeStyle.value)* 66.5 + ( 13.76 * Number(weight.value) ) + ( 5.003 * ((Number(heightInFeet.value)*12)+Number(heightInInches.value))) - ( 6.755 * Number(age.value) ))} calorie per day`
+        output.innerText=`You need ${Math.round(Number(lifeStyle.value)*0.2* 66.5+(13.76*Number(weight.value))+(5.003*((Number(heightInFeet.value)*12)+Number(heightInInches.value)))-(6.755 *Number(age.value) ))} calorie per day`
     } else {
-        output.innerText= `Something's wrong, please check`
+        output.innerText = `Something's wrong, please check`
     }
 }
 
