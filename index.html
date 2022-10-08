@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>Calorie Calcultor</h1>
+    <form id="myform">
+        <div>
+            Female<input type="radio" id="female" name="gender" value="female">
+            Male<input type="radio" id="male" name="gender" value="male">
+        </div>
+        <div>
+            Weight<input type="number" id="weight" value="40"> Kg
+        </div>
+        <div>
+            Height<input type="number" id="height-In-Feet" value="5"> Feet
+            <input type="number" id="height-In-Inches" value="0" min="0" max="9"> Inches
+        </div>
+        <div>
+            Age<input type="number" id="age" value="20"> Years
+        </div>
+        <div>
+            LifeStyle<input type="number" id="lifeStyle" value="3" min="1" max="5"> 1 = Low Activity 5 = High Activity
+        </div>
+    </form>
+    <button id="cal-btn">Calculate</button>
+    </div>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
